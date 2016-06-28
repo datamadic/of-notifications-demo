@@ -181,7 +181,9 @@ function note() {
 
 
     notification = new fin.desktop.Notification({
-        url: noteurl.value ||  location.origin + '/note.html?a='+msgnum,
+
+        // url: noteurl.value ||  location.origin + '/note.html?a='+msgnum,
+        url: noteurl.value ||  'https://datamadic.github.io/of-notifications-demo/note.html',
         message: notemsg.value || msgnum++,
         onClick: function(e) {
             // console.log("clicked - holy crap", e);
