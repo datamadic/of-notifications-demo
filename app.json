@@ -5,8 +5,8 @@
                 "name": "OpenfinPOC",
                 "description": "OpenFin POC",
                 "--url": "chrome://serviceworker-internals",
-                "--url": "https://mdn.github.io/sw-test/",
-                "url": "http://local:5000/building.html",
+                "url": "https://datamadic.github.io/of-notifications-demo/building.html",
+                "-url": "http://local:5000/building.html",
 
                 "_url": "http://test.openf.in/test_apps/apps/standard/index.html",
                 "_url": "http://demoappdirectory.openf.in/desktop/config/apps/OpenFin/HelloOpenFin/index.html",
