@@ -1,0 +1,155 @@
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Document</title>
+
+  </head>
+  <body >
+        <!-- <h1>demo app </h1> -->
+        Name / uuid
+        <h2 id="name"></h2>
+        <h2 id="uuid"></h2>
+
+
+        <div>I'm in a div</div>
+
+    <div
+       style="background-color: goldenrod;
+              width:50px;
+              height:50px;
+              -webkit-app-region: drag"></div>
+
+    <span onclick="window.close()">close</span>
+    <span onclick="location.href=location.href">reload</span>
+        <span onclick="maximize()">maximize</span>
+        <span onclick="minimize()">minimize</span>
+        <span onclick="restore()">restore</span>
+
+    <!-- <div -->
+    <!--    id="drag-region" -->
+    <!--    draggable="true" -->
+    <!--    style="background-color: steelblue; -->
+    <!--           width:50px; -->
+    <!--           height:50px; -->
+    <!--           position:absolute; -->
+    <!--           top: 450px; -->
+    <!--           left:450px"></div> -->
+
+    <button onclick="makewin()">make win</button>
+    <button onclick="makeapp()">make app</button>
+    <button onclick="showDev()">show dev</button>
+    <!-- <button onclick="launchNotifications()"> launch notifications</button> -->
+    <br><br>
+    <input type="text" id="noteurl" placeholder="url">
+    <input type="number" id="notetimeout" placeholder="timout" value="50">
+    <input type="text" id="notemsg" placeholder="message">
+    <button onclick="note()"> show notificaiton</button>
+    <br>
+    <input type="text" id="tonote" placeholder="send msg to notification">
+    <button onclick="sendtonote()">Send Msg</button>
+    <br>
+    From Note: <span id="fromnote"></span>
+    <br>
+    <br>
+    <input id="topic" type="text" placeholder="topic">
+    <input id="data" type="text" placeholder="data">
+    <input id="sendto-uuid" type="text" placeholder="sendto-uuid">
+    <input id="sendto-name" type="text" placeholder="sendto-name">
+    <br>
+    <button onclick="publish()">publish </button>
+    <button onclick="send()">send </button>
+
+    <br>
+    <br>
+    <input id="topic-sub" type="text" placeholder="topic-sub">
+    <input id="uuid-sub" type="text" placeholder="uuid-sub">
+    <input id="name-sub" type="text" placeholder="name-sub">
+    <br>
+    <button onclick="subscribe()">subscribe </button>
+    <br>
+    <textarea name="" id="subresult" cols="30" rows="10"></textarea>
+
+    <div id="it-happened" style="font-weight: bold; width: 250px; word-wrap:break-word;"></div>
+
+
+
+    <select name="asdf" id="asdf">
+        <option value="asdf">asdf</option>
+        <option value="asdf">asdf</option>
+        <option value="asdf">asdf</option>
+        <option value="asdf">asdf</option>
+        <option value="asdf">asdf</option>
+        <option value="asdf">asdf</option>
+        <option value="asdf">asdf</option>
+        <option value="asdf">asdf</option>
+        <option value="asdf">asdf</option>
+        <option value="asdf">asdf</option>
+        <option value="asdf">asdf</option>
+        <option value="asdf">asdf</option>
+        <option value="asdf">asdf</option>
+        <option value="asdf">asdf</option>
+        <option value="asdf">asdf</option>
+        <option value="asdf">asdf</option>
+        <option value="asdf">asdf</option>
+        <option value="asdf">asdf</option>
+        <option value="asdf">asdf</option>
+        <option value="asdf">asdf</option>
+        <option value="asdf">asdf</option>
+        <option value="asdf">asdf</option>
+        <option value="asdf">asdf</option>
+        <option value="asdf">asdf</option>
+        <option value="asdf">asdf</option>
+        <option value="asdf">asdf</option>
+        <option value="asdf">asdf</option>
+        <option value="asdf">asdf</option>
+        <option value="asdf">asdf</option>
+        <option value="asdf">asdf</option>
+        <option value="asdf">asdf</option>
+        <option value="asdf">asdf</option>
+        <option value="asdf">asdf</option>
+        <option value="asdf">asdf</option>
+        <option value="asdf">asdf</option>
+        <option value="asdf">asdf</option>
+        <option value="asdf">asdf</option>
+        <option value="asdf">asdf</option>
+        <option value="asdf">asdf</option>
+        <option value="asdf">asdf</option>
+        <option value="asdf">asdf</option>
+        <option value="asdf">asdf</option>
+        <option value="asdf">asdf</option>
+        <option value="asdf">asdf</option>
+        <option value="asdf">asdf</option>
+        <option value="asdf">asdf</option>
+        <option value="asdf">asdf</option>
+        <option value="asdf">asdf</option>
+        <option value="asdf">asdf</option>
+        <option value="asdf">asdf</option>
+        <option value="asdf">asdf</option>
+
+    </select>
+
+<div id="holder">
+  Drag your file here
+</div>
+
+<script>
+  // const holder = document.getElementById('holder');
+  // holder.ondragover = () => {
+  //   return false;
+  // };
+  // holder.ondragleave = holder.ondragend = () => {
+  //   return false;
+  // };
+  // holder.ondrop = (e) => {
+  //   e.preventDefault();
+  //   const file = e.dataTransfer.files[0];
+  //   console.log('File you dragged here is', file.path);
+  //   return false;
+  // };
+</script>
+
+<!-- <iframe src="chrome://serviceworker-internals/" width="500" height="500"></iframe> -->
+
+    <script src="building.js"></script>
+    </body>
+</html>
