@@ -96,9 +96,9 @@ function send() {
     fin.desktop.InterApplicationBus.send(sendtoUuid.value, sendtoName.value, topic.value, data.value);
 }
 
-// var ls = function(data, uuid) {
-//     subresult.value += data + ' \t ' + uuid + '\n';
-// }
+var ls = function(data, uuid) {
+    subresult.value += data + ' \t ' + uuid + '\n';
+}
 
 function subscribe() {
     fin.desktop.InterApplicationBus.subscribe(uuidsub.value || '*', namesub.value, topicsub.value, ls);
