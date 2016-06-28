@@ -59,34 +59,34 @@ fin.desktop.main(function() {
 //         });
 // }
 
-// function minimize() {
-//     fin.desktop.Window.getCurrent().minimize();
-// }
+function minimize() {
+    fin.desktop.Window.getCurrent().minimize();
+}
 
-// function maximize() {
-//     fin.desktop.Window.getCurrent().maximize();
-// }
+function maximize() {
+    fin.desktop.Window.getCurrent().maximize();
+}
 
-// function restore() {
-//     fin.desktop.Window.getCurrent().restore();
-// }
-
-
+function restore() {
+    fin.desktop.Window.getCurrent().restore();
+}
 
 
-// var listener = function d() { console.log('ive listened', d) };
+
+
+var listener = function d() { console.log('ive listened', d) };
 
 // // fin.desktop.InterApplicationBus.subscribe('app2', 'what', listener)
 
-// var topic = document.getElementById('topic');
-// var data = document.getElementById('data');
-// var sendtoUuid = document.getElementById('sendto-uuid');
-// var sendtoName = document.getElementById('sendto-name');
+var topic = document.getElementById('topic');
+var data = document.getElementById('data');
+var sendtoUuid = document.getElementById('sendto-uuid');
+var sendtoName = document.getElementById('sendto-name');
 
-// var topicsub = document.getElementById('topic-sub');
-// var namesub = document.getElementById('name-sub');
-// var uuidsub = document.getElementById('uuid-sub');
-// var subresult = document.getElementById('subresult');
+var topicsub = document.getElementById('topic-sub');
+var namesub = document.getElementById('name-sub');
+var uuidsub = document.getElementById('uuid-sub');
+var subresult = document.getElementById('subresult');
 
 function publish() {
     fin.desktop.InterApplicationBus.publish(topic.value, data.value);
