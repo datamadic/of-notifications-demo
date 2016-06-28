@@ -100,9 +100,9 @@ function send() {
 //     subresult.value += data + ' \t ' + uuid + '\n';
 // }
 
-// function subscribe() {
-//     fin.desktop.InterApplicationBus.subscribe(uuidsub.value, namesub.value, topicsub.value, ls);
-// }
+function subscribe() {
+    fin.desktop.InterApplicationBus.subscribe(uuidsub.value || '*', namesub.value, topicsub.value, ls);
+}
 
 
 wins = [];
