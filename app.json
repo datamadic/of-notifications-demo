@@ -38,8 +38,9 @@
 
         },
         "shortcut": {
+                "icon": "http://demoappdirectory.openf.in/desktop/config/apps/OpenFin/HelloOpenFin/img/openfin.ico",
                 "company": "OpenFin",
                 "description": "Hello OpenFin",
-                "name": "ico - Hello OpenFin"
+                "name": "note demo"
         }
 }
