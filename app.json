@@ -34,7 +34,7 @@
 
                 "-version": "stable",
                 "-version": "6.49.11.83",
-                "version": "6.49.11.95"
+                "version": "canary"
 
         },
         "shortcut": {
