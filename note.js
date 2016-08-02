@@ -15,6 +15,8 @@ function onNotificationMessage(msg){
 // }())
 
 fin.desktop.main(function(){
+    var name = document.getElementById('name');
+    name.innerHTML = fin.desktop.Window.getCurrent().name;
    // var dt = document.getElementById('date');
    // dt.innerHTML = new Date();
 });

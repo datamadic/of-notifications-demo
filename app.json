@@ -5,8 +5,8 @@
                 "name": "OpenfinPOC",
                 "description": "OpenFin POC",
                 "--url": "chrome://serviceworker-internals",
-                "url": "https://datamadic.github.io/of-notifications-demo/building.html",
-                "-url": "http://local:5000/building.html",
+                "-url": "https://datamadic.github.io/of-notifications-demo/building.html",
+                "url": "http://local:5000/building.html",
 
                 "_url": "http://test.openf.in/test_apps/apps/standard/index.html",
                 "_url": "http://demoappdirectory.openf.in/desktop/config/apps/OpenFin/HelloOpenFin/index.html",
@@ -15,7 +15,7 @@
                 "autoShow": true,
                 "contextMenu": true,
                 "forceLatest": true,
-                "saveWindowState": false,
+                "saveWindowState": true,
                 "delay_connection": true,
                 "frame": false,
                 "transparent": false,
@@ -24,17 +24,16 @@
                 "frame": true,
                 "sadf": "--disable-legacy-window --debug=5858 --v=1       --remote-debugging-port=9090 --disable-web-security"
 
-
         },
         "runtime": {
-                "arguments": "--disable-legacy-window --debug=5858 --v=1       --remote-debugging-port=9090 --disable-web-security",
+                "arguments": "--disable-legacy-window --debug=5858 --v=1       --remote-debugging-port=9090 --disable-web-security --attach-console",
                 "--version": "6.45.8.102",
                 "--version": "6.49.8.9000",
                 "--version": "alpha-next",
 
                 "-version": "stable",
-                "-version": "6.49.11.83",
-                "version": "6.49.11.95"
+                "-version": "6.49.12.11",
+                "version": "canary"
 
         },
         "shortcut": {

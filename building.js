@@ -24,6 +24,9 @@ fin.desktop.main(function() {
     name.innerHTML = a.name;
     uuid.innerHTML = a.uuid;
 
+    fin.desktop.System.getVersion(function(v) {
+        document.getElementById('version').innerHTML = v;
+    })
 
     // TODO this has differing behavior in OF 5 vs 6
     // a.addEventListener('close-requested', function(data) {
@@ -182,27 +185,27 @@ function note() {
 
     notification = new fin.desktop.Notification({
 
-        // url: noteurl.value ||  location.origin + '/note.html?a='+msgnum,
-        url: noteurl.value ||  'https://datamadic.github.io/of-notifications-demo/note.html',
+        url: noteurl.value ||  location.origin + '/note.html?a='+msgnum,
+        // url: noteurl.value ||  'https://datamadic.github.io/of-notifications-demo/note.html',
         message: notemsg.value || msgnum++,
         onClick: function(e) {
-            // console.log("clicked - holy crap", e);
+            //console.log("clicked - holy crap", e);
         },
         onClose: function() {
-            // console.log("closed");
+            //console.log("closed");
         },
         onDismiss: function() {
-            // console.log("dismissed");
+            //console.log("dismissed");
         },
         onError: function(reason) {
-            console.log("error: " + reason);
+            //console.log("error: " + reason);
         },
         onMessage: function(message) {
-            console.log("are you fucking kidding me?!: ", message);
+            //console.log("are you fucking kidding me?!: ", message);
             fromnote.innerHTML = message.toString()
         },
         onShow: function() {
-            // console.log("shown");
+            //console.log("shown");
         },
         timeout: notetimeout.value? notetimeout.value * 1000 :  5000
     });

@@ -4,9 +4,9 @@
     <title>Document</title>
 
   </head>
-  <body >
+  <body style="background-color:#e1eef6">
         <!-- <h1>demo app </h1> -->
-        Name / uuid
+        Name / uuid <span id="version"></span>
         <h2 id="name"></h2>
         <h2 id="uuid"></h2>
 
@@ -41,7 +41,7 @@
     <!-- <button onclick="launchNotifications()"> launch notifications</button> -->
     <br><br>
     <input type="text" id="noteurl" placeholder="url">
-    <input type="number" id="notetimeout" placeholder="timout" value="50">
+    <input type="number" id="notetimeout" placeholder="timout" value="500">
     <input type="text" id="notemsg" placeholder="message">
     <button onclick="note()"> show notificaiton</button>
     <br>
@@ -132,7 +132,58 @@
   Drag your file here
 </div>
 
+<form autocomplete="on" action="">
+
+    <input autocomplete="on" type="password" name="ffff">
+    <button type="submit">Submit</button>
+</form>
+
+
+<form id="aa" action="fake-shit.asp" autocomplete="on">
+  First name:<input type="text" name="username"><br>
+  Last name: <input type="text" name="lname"><br>
+  PASS: <input type="password" name="password"><br>
+  <button id="asdf">Submit</button>
+</form>
+
+
+<button onclick="addGeneratedForms()">addGeneratedForms</button>
 <script>
+function addGeneratedForms(){
+  var div = document.createElement('div');
+  div.innerHTML = '<form class="login" method="post" action="login">\
+    <input type="text" name="username">\
+    <input type="password" name="password">\
+    <button type="submit">login</button> stay on this page but update the url with pushState\
+  </form>';
+  document.body.appendChild(div);
+}
+document.body.addEventListener('submit', function ajax(e){
+  e.preventDefault();
+  setTimeout(function(){
+      e.target.parentNode.removeChild(e.target); // Or alternatively just hide the form: e.target.style.display = 'none';
+
+      history.replaceState({success:true}, 'title', "/success.html");
+
+      // This is working too!!! (uncomment the history.xxxState(..) line above) (it works when the http response is a redirect or a 200 status)
+      //var request = new XMLHttpRequest();
+      //request.open('POST', '/success.html', true); // use a real url you have instead of '/success.html'
+      //request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
+      //request.send();
+  }, 1);
+}, false);
+</script>
+
+
+
+
+<script>
+
+var submit = document.getElementById('asdf');
+submit.addEventListener('click', function(e){
+    aa = document.getElementById('aa');
+    aa.submit();
+});
   // const holder = document.getElementById('holder');
   // holder.ondragover = () => {
   //   return false;
