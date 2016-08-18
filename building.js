@@ -166,7 +166,7 @@ function note() {
 
     notification = new fin.desktop.Notification({
 
-        url: noteurl.value  || location.origin + '/note.html?a='+msgnum,
+        url: noteurl.value  || location.host === 'datamadic.github.io'? 'https://datamadic.github.io/of-notifications-demo/note.html' :  location.origin + '/note.html?a='+msgnum,
 				// || 'http://local:8080/foo' 
         // url: noteurl.value ||  'https://datamadic.github.io/of-notifications-demo/note.html',
         message: notemsg.value || msgnum++,
