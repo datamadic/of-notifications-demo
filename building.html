@@ -4,7 +4,7 @@
     <title>Document</title>
 
   </head>
-  <body style="background-color:#e1eef6">
+  <body >	<!-- style="background-color:#e1eef6" -->
         <!-- <h1>demo app </h1> -->
         Name / uuid <span id="version"></span>
         <h2 id="name"></h2>
@@ -38,10 +38,11 @@
     <button onclick="makewin()">make win</button>
     <button onclick="makeapp()">make app</button>
     <button onclick="showDev()">show dev</button>
+		<button onclick="launch_hof_canary()">launch canary HOF</button>
     <!-- <button onclick="launchNotifications()"> launch notifications</button> -->
     <br><br>
     <input type="text" id="noteurl" placeholder="url">
-    <input type="number" id="notetimeout" placeholder="timout" value="500">
+    <input type="number" id="notetimeout" placeholder="timout" value="5">
     <input type="text" id="notemsg" placeholder="message">
     <button onclick="note()"> show notificaiton</button>
     <br>

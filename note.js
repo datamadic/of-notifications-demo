@@ -6,7 +6,7 @@ function init(){
 
 function onNotificationMessage(msg){
   console.log('got', msg);
-  document.getElementById('msg').innerHTML = msg;
+		document.getElementById('msg').innerHTML = JSON.stringify(msg);
 }
 
 // (function(){

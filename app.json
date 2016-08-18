@@ -1,43 +1,34 @@
 {
-        "splashScreenImage": "http://upload.wikimedia.org/wikipedia/commons/6/6d/Dusy_Basin_in_Kings_Canyon1.jpg?r=1",
-        "devtools_port": 9090,
-        "startup_app": {
-                "name": "OpenfinPOC",
-                "description": "OpenFin POC",
-                "--url": "chrome://serviceworker-internals",
-                "url": "https://datamadic.github.io/of-notifications-demo/building.html",
-                "-url": "http://local:5000/building.html",
-
-                "_url": "http://test.openf.in/test_apps/apps/standard/index.html",
-                "_url": "http://demoappdirectory.openf.in/desktop/config/apps/OpenFin/HelloOpenFin/index.html",
-                "uuid": "parent",
-                "--url": "http://www.w3schools.com/tags/tryit.asp?filename=tryhtml_link_target",
-                "autoShow": true,
-                "contextMenu": true,
-                "forceLatest": true,
-                "saveWindowState": true,
-                "delay_connection": true,
-                "frame": false,
-                "transparent": false,
-                "_maxHeight":500,
-                "_maxWidth": 500,
-                "frame": true,
-                "sadf": "--disable-legacy-window --debug=5858 --v=1       --remote-debugging-port=9090 --disable-web-security"
-
-        },
-        "runtime": {
-                "arguments": "--disable-legacy-window --debug=5858 --v=1       --remote-debugging-port=9090 --disable-web-security --attach-console",
-                "--version": "6.45.8.102",
-                "--version": "6.49.8.9000",
-                "--version": "alpha-next",
-                "-version": "stable",
-                "version": "canary"
-
-        },
-        "shortcut": {
-                "icon": "http://demoappdirectory.openf.in/desktop/config/apps/OpenFin/HelloOpenFin/img/openfin.ico",
-                "company": "OpenFin",
-                "description": "Hello OpenFin",
-                "name": "note demo"
-        }
+ "splashScreenImage": "http://upload.wikimedia.org/wikipedia/commons/6/6d/Dusy_Basin_in_Kings_Canyon1.jpg?r=1",
+ "devtools_port": 9090,
+ "startup_app": {
+  "name": "OpenfinPOC",
+  "description": "OpenFin POC",
+  "url-remote": "https://datamadic.github.io/of-notifications-demo/building.html",
+  "url-local": "http://local:5000/building.html",
+  "url-mac": "http://localhost:5000/building.html",
+  "url-hof": "http://demoappdirectory.openf.in/desktop/config/apps/OpenFin/HelloOpenFin/index.html",
+  "url": "http://localhost:5000/building.html",
+  "_url": "http://demoappdirectory.openf.in/desktop/config/apps/OpenFin/HelloOpenFin/index.html",
+  "uuid": "parent",
+  "autoShow": true,
+  "contextMenu": true,
+  "forceLatest": true,
+  "saveWindowState": true,
+  "delay_connection": true,
+  "frame": true,
+  "transparent": false,
+  "_maxHeight": 500,
+  "_maxWidth": 500
+ },
+ "runtime": {
+  "arguments": "--disable-legacy-window --debug=5858 --v=1       --remote-debugging-port=9090 --disable-web-security --attach-console",
+  "version": "canary"
+ },
+ "shortcut": {
+  "icon": "http://demoappdirectory.openf.in/desktop/config/apps/OpenFin/HelloOpenFin/img/openfin.ico",
+  "company": "OpenFin",
+  "description": "Hello OpenFin",
+  "name": "note demo"
+ }
 }
