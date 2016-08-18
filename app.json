@@ -8,7 +8,7 @@
   "url-local": "http://local:5000/building.html",
   "url-mac": "http://localhost:5000/building.html",
   "url-hof": "http://demoappdirectory.openf.in/desktop/config/apps/OpenFin/HelloOpenFin/index.html",
-  "url": "http://localhost:5000/building.html",
+  "url": "https://datamadic.github.io/of-notifications-demo/building.html",
   "_url": "http://demoappdirectory.openf.in/desktop/config/apps/OpenFin/HelloOpenFin/index.html",
   "uuid": "parent",
   "autoShow": true,
