@@ -17,8 +17,21 @@ function onNotificationMessage(msg){
 fin.desktop.main(function(){
     var name = document.getElementById('name');
     name.innerHTML = fin.desktop.Window.getCurrent().name;
-   // var dt = document.getElementById('date');
-   // dt.innerHTML = new Date();
+
+		var unSub = fin.desktop.Notification.getCurrent().setMessageHandler(function (msg){
+				console.log(msg);
+		});
+
+    // var note = fin.desktop.Notification.getCurrent();
+    // note.setMessageHandler(function(a){
+    //     console.log('the this and the that', a);
+    // });
+
+
+
+		// To unhook
+		// unSub();
+
 });
 
 function closeme() {
@@ -31,11 +44,12 @@ function sendmsg() {
     var note = fin.desktop.Notification.getCurrent();
 
     note.sendMessageToApplication('heres the thing... ' +
-        Date.now(),
-        function(){console.log('called', arguments)})
+                                  Date.now(),
+                                  function(){console.log('called', arguments)});
     /*
         note.sendMessageToApplication("whatever man", function(){console.log('called', arguments)})
      */
 }
 
 //setInterval(()=>{document.getElementById('msg').innerHTML = Math.random();}, 300);
+

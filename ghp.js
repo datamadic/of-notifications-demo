@@ -15,5 +15,15 @@ case 'remote':
 		app_json['startup_app'].url = app_json['startup_app']['url-remote'];
 		fs.writeFileSync('./app.json', JSON.stringify(app_json, null, ' '));
 		break;
-default: break;
+
+case 'win':
+		console.log('setting url to ', app_json['startup_app']['url-win'])
+		app_json['startup_app'].url = app_json['startup_app']['url-win'];
+		fs.writeFileSync('./app.json', JSON.stringify(app_json, null, ' '));
+		break;
+
+default:
+    console.log('possible locations: \nmac: ' + app_json['startup_app']['url-mac'] +
+                '\nremote: ' + app_json['startup_app']['url-remote'] +
+                '\nwin: ' + app_json['startup_app']['url-win']);
 }

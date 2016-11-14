@@ -1,207 +1,227 @@
 <html>
-  <head>
-    <meta charset="UTF-8"/>
-    <title>Document</title>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Document</title>
 
-  </head>
-  <body >	<!-- style="background-color:#e1eef6" -->
+    </head>
+    <body style="background-color:#e1eef6" >	<!-- style="background-color:#e1eef6" -->
         <!-- <h1>demo app </h1> -->
         Name / uuid <span id="version"></span>
         <h2 id="name"></h2>
         <h2 id="uuid"></h2>
+        <h2 id="id"></h2>
 
 
         <div>I'm in a div</div>
 
-    <div
-       style="background-color: goldenrod;
-              width:50px;
-              height:50px;
-              -webkit-app-region: drag"></div>
+        <div
+            style="background-color: goldenrod;
+                   width:50px;
+                   height:50px;
+                   -webkit-app-region: drag"></div>
 
-    <span onclick="window.close()">close</span>
-    <span onclick="location.href=location.href">reload</span>
+        <span onclick="window.close()">close</span>
+        <span onclick="location.href=location.href">reload</span>
         <span onclick="maximize()">maximize</span>
         <span onclick="minimize()">minimize</span>
         <span onclick="restore()">restore</span>
 
-    <!-- <div -->
-    <!--    id="drag-region" -->
-    <!--    draggable="true" -->
-    <!--    style="background-color: steelblue; -->
-    <!--           width:50px; -->
-    <!--           height:50px; -->
-    <!--           position:absolute; -->
-    <!--           top: 450px; -->
-    <!--           left:450px"></div> -->
-
-    <button onclick="makewin()">make win</button>
-    <button onclick="makeapp()">make app</button>
-    <button onclick="showDev()">show dev</button>
-		<button onclick="launch_hof_canary()">launch canary HOF</button>
-    <!-- <button onclick="launchNotifications()"> launch notifications</button> -->
-    <br><br>
-    <input type="text" id="noteurl" placeholder="url">
-    <input type="number" id="notetimeout" placeholder="timout" value="5">
-    <input type="text" id="notemsg" placeholder="message">
-    <button onclick="note()"> show notificaiton</button>
-    <br>
-    <input type="text" id="tonote" placeholder="send msg to notification">
-    <button onclick="sendtonote()">Send Msg</button>
-    <br>
-    From Note: <span id="fromnote"></span>
-    <br>
-    <br>
-    <input id="topic" type="text" placeholder="topic">
-    <input id="data" type="text" placeholder="data">
-    <input id="sendto-uuid" type="text" placeholder="sendto-uuid">
-    <input id="sendto-name" type="text" placeholder="sendto-name">
-    <br>
-    <button onclick="publish()">publish </button>
-    <button onclick="send()">send </button>
-
-    <br>
-    <br>
-    <input id="topic-sub" type="text" placeholder="topic-sub">
-    <input id="uuid-sub" type="text" placeholder="uuid-sub">
-    <input id="name-sub" type="text" placeholder="name-sub">
-    <br>
-    <button onclick="subscribe()">subscribe </button>
-    <br>
-    <textarea name="" id="subresult" cols="30" rows="10"></textarea>
-
-    <div id="it-happened" style="font-weight: bold; width: 250px; word-wrap:break-word;"></div>
+        <!-- <div -->
+        <!--    id="drag-region" -->
+        <!--    draggable="true" -->
+        <!--    style="background-color: steelblue; -->
+        <!--           width:50px; -->
+        <!--           height:50px; -->
+        <!--           position:absolute; -->
+        <!--           top: 450px; -->
+        <!--           left:450px"></div> -->
 
 
+        <button onclick="util()">util</button>
+        <button onclick="makeaboutblank()">about:blank</button>
+        <button onclick="makewin()">make win</button>
+        <button onclick="makeapp()">make app</button>
+        <button onclick="showDev()">show dev</button>
+        <button onclick="window.open('about:blank')">Leak Maybe?</button>
+		    <button onclick="launch_hof_canary()">launch canary HOF</button>
+        <!-- <button onclick="makeBadWindow()">Make Bad Window</button> -->
 
-    <select name="asdf" id="asdf">
-        <option value="asdf">asdf</option>
-        <option value="asdf">asdf</option>
-        <option value="asdf">asdf</option>
-        <option value="asdf">asdf</option>
-        <option value="asdf">asdf</option>
-        <option value="asdf">asdf</option>
-        <option value="asdf">asdf</option>
-        <option value="asdf">asdf</option>
-        <option value="asdf">asdf</option>
-        <option value="asdf">asdf</option>
-        <option value="asdf">asdf</option>
-        <option value="asdf">asdf</option>
-        <option value="asdf">asdf</option>
-        <option value="asdf">asdf</option>
-        <option value="asdf">asdf</option>
-        <option value="asdf">asdf</option>
-        <option value="asdf">asdf</option>
-        <option value="asdf">asdf</option>
-        <option value="asdf">asdf</option>
-        <option value="asdf">asdf</option>
-        <option value="asdf">asdf</option>
-        <option value="asdf">asdf</option>
-        <option value="asdf">asdf</option>
-        <option value="asdf">asdf</option>
-        <option value="asdf">asdf</option>
-        <option value="asdf">asdf</option>
-        <option value="asdf">asdf</option>
-        <option value="asdf">asdf</option>
-        <option value="asdf">asdf</option>
-        <option value="asdf">asdf</option>
-        <option value="asdf">asdf</option>
-        <option value="asdf">asdf</option>
-        <option value="asdf">asdf</option>
-        <option value="asdf">asdf</option>
-        <option value="asdf">asdf</option>
-        <option value="asdf">asdf</option>
-        <option value="asdf">asdf</option>
-        <option value="asdf">asdf</option>
-        <option value="asdf">asdf</option>
-        <option value="asdf">asdf</option>
-        <option value="asdf">asdf</option>
-        <option value="asdf">asdf</option>
-        <option value="asdf">asdf</option>
-        <option value="asdf">asdf</option>
-        <option value="asdf">asdf</option>
-        <option value="asdf">asdf</option>
-        <option value="asdf">asdf</option>
-        <option value="asdf">asdf</option>
-        <option value="asdf">asdf</option>
-        <option value="asdf">asdf</option>
-        <option value="asdf">asdf</option>
+        <br/><br/>
+        <div id="buttons"></div>
+        <!-- <button onclick="launchNotifications()"> launch notifications</button> -->
+        <br><br>
+        <input type="text" id="noteurl" placeholder="url">
+        <input type="number" id="notetimeout" placeholder="timout" value="10">
+        <input type="text" id="notemsg" placeholder="message">
+        <button onclick="note()"> show notificaiton</button>
+        <br>
+        <input type="text" id="tonote" placeholder="send msg to notification">
+        <button onclick="sendtonote()">Send Msg</button>
+        <br>
+        From Note: <span id="fromnote"></span>
+        <br>
+        <br>
+        <input id="topic" type="text" placeholder="topic">
+        <input id="data" type="text" placeholder="data">
+        <input id="sendto-uuid" type="text" placeholder="sendto-uuid">
+        <input id="sendto-name" type="text" placeholder="sendto-name">
+        <br>
+        <button onclick="publish()">publish </button>
+        <button onclick="send()">send </button>
 
-    </select>
+        <br>
+        <br>
+        <input id="topic-sub" type="text" placeholder="topic-sub">
+        <input id="uuid-sub" type="text" placeholder="uuid-sub">
+        <input id="name-sub" type="text" placeholder="name-sub">
+        <br>
+        <button onclick="subscribe()">subscribe </button>
+        <br>
+        <textarea name="" id="subresult" cols="30" rows="10"></textarea>
 
-<div id="holder">
-  Drag your file here
-</div>
-
-<form autocomplete="on" action="">
-
-    <input autocomplete="on" type="password" name="ffff">
-    <button type="submit">Submit</button>
-</form>
+        <div id="it-happened" style="font-weight: bold; width: 250px; word-wrap:break-word;"></div>
 
 
-<form id="aa" action="fake-shit.asp" autocomplete="on">
-  First name:<input type="text" name="username"><br>
-  Last name: <input type="text" name="lname"><br>
-  PASS: <input type="password" name="password"><br>
-  <button id="asdf">Submit</button>
-</form>
+
+        <select name="asdf" id="asdf">
+            <option value="asdf">asdf</option>
+            <option value="asdf">asdf</option>
+            <option value="asdf">asdf</option>
+            <option value="asdf">asdf</option>
+            <option value="asdf">asdf</option>
+            <option value="asdf">asdf</option>
+            <option value="asdf">asdf</option>
+            <option value="asdf">asdf</option>
+            <option value="asdf">asdf</option>
+            <option value="asdf">asdf</option>
+            <option value="asdf">asdf</option>
+            <option value="asdf">asdf</option>
+            <option value="asdf">asdf</option>
+            <option value="asdf">asdf</option>
+            <option value="asdf">asdf</option>
+            <option value="asdf">asdf</option>
+            <option value="asdf">asdf</option>
+            <option value="asdf">asdf</option>
+            <option value="asdf">asdf</option>
+            <option value="asdf">asdf</option>
+            <option value="asdf">asdf</option>
+            <option value="asdf">asdf</option>
+            <option value="asdf">asdf</option>
+            <option value="asdf">asdf</option>
+            <option value="asdf">asdf</option>
+            <option value="asdf">asdf</option>
+            <option value="asdf">asdf</option>
+            <option value="asdf">asdf</option>
+            <option value="asdf">asdf</option>
+            <option value="asdf">asdf</option>
+            <option value="asdf">asdf</option>
+            <option value="asdf">asdf</option>
+            <option value="asdf">asdf</option>
+            <option value="asdf">asdf</option>
+            <option value="asdf">asdf</option>
+            <option value="asdf">asdf</option>
+            <option value="asdf">asdf</option>
+            <option value="asdf">asdf</option>
+            <option value="asdf">asdf</option>
+            <option value="asdf">asdf</option>
+            <option value="asdf">asdf</option>
+            <option value="asdf">asdf</option>
+            <option value="asdf">asdf</option>
+            <option value="asdf">asdf</option>
+            <option value="asdf">asdf</option>
+            <option value="asdf">asdf</option>
+            <option value="asdf">asdf</option>
+            <option value="asdf">asdf</option>
+            <option value="asdf">asdf</option>
+            <option value="asdf">asdf</option>
+            <option value="asdf">asdf</option>
+
+        </select>
+
+        <div id="holder">
+            Drag your file here
+        </div>
+
+        <form autocomplete="on" action="">
+
+            <input autocomplete="on" type="password" name="ffff">
+            <button type="submit">Submit</button>
+        </form>
 
 
-<button onclick="addGeneratedForms()">addGeneratedForms</button>
-<script>
-function addGeneratedForms(){
-  var div = document.createElement('div');
-  div.innerHTML = '<form class="login" method="post" action="login">\
+        <form id="aa" action="fake-shit.asp" autocomplete="on">
+            First name:<input type="text" name="username"><br>
+            Last name: <input type="text" name="lname"><br>
+            PASS: <input type="password" name="password"><br>
+            <button id="asdf">Submit</button>
+        </form>
+
+
+        <button onclick="addGeneratedForms()">addGeneratedForms</button>
+        <script>
+         function addGeneratedForms(){
+             var div = document.createElement('div');
+             div.innerHTML = '<form class="login" method="post" action="login">\
     <input type="text" name="username">\
     <input type="password" name="password">\
     <button type="submit">login</button> stay on this page but update the url with pushState\
   </form>';
-  document.body.appendChild(div);
-}
-document.body.addEventListener('submit', function ajax(e){
-  e.preventDefault();
-  setTimeout(function(){
-      e.target.parentNode.removeChild(e.target); // Or alternatively just hide the form: e.target.style.display = 'none';
+             document.body.appendChild(div);
+         }
+         document.body.addEventListener('submit', function ajax(e){
+             e.preventDefault();
+             setTimeout(function(){
+                 e.target.parentNode.removeChild(e.target); // Or alternatively just hide the form: e.target.style.display = 'none';
 
-      history.replaceState({success:true}, 'title', "/success.html");
+                 history.replaceState({success:true}, 'title', "/success.html");
 
-      // This is working too!!! (uncomment the history.xxxState(..) line above) (it works when the http response is a redirect or a 200 status)
-      //var request = new XMLHttpRequest();
-      //request.open('POST', '/success.html', true); // use a real url you have instead of '/success.html'
-      //request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
-      //request.send();
-  }, 1);
-}, false);
-</script>
+                 // This is working too!!! (uncomment the history.xxxState(..) line above) (it works when the http response is a redirect or a 200 status)
+                 //var request = new XMLHttpRequest();
+                 //request.open('POST', '/success.html', true); // use a real url you have instead of '/success.html'
+                 //request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
+                 //request.send();
+             }, 1);
+         }, false);
+        </script>
+
+        <!-- <iframe src="http://thesurfersview.com/cams/monmouth/monmouth.php"></iframe> -->
+        <!-- <iframe src="http://cnn.com"></iframe> -->
+        <!-- <iframe src="http://example.com"></iframe> -->
+
+
+        <!-- <iframe src="http://demoappdirectory.openf.in/desktop/config/apps/OpenFin/HelloOpenFin/canary.json"></iframe> -->
+        <!-- <iframe src="https://example.com"></iframe> -->
+        <!-- <iframe src="http://cdn.openfin.co/jsdocs/stable/index.html"></iframe> -->
 
 
 
+        <script>
 
-<script>
+         var submit = document.getElementById('asdf');
+         submit.addEventListener('click', function(e){
+             aa = document.getElementById('aa');
+             aa.submit();
+         });
+         // const holder = document.getElementById('holder');
+         // holder.ondragover = () => {
+         //   return false;
+         // };
+         // holder.ondragleave = holder.ondragend = () => {
+         //   return false;
+         // };
+         // holder.ondrop = (e) => {
+         //   e.preventDefault();
+         //   const file = e.dataTransfer.files[0];
+         //   console.log('File you dragged here is', file.path);
+         //   return false;
+         // };
+        </script>
 
-var submit = document.getElementById('asdf');
-submit.addEventListener('click', function(e){
-    aa = document.getElementById('aa');
-    aa.submit();
-});
-  // const holder = document.getElementById('holder');
-  // holder.ondragover = () => {
-  //   return false;
-  // };
-  // holder.ondragleave = holder.ondragend = () => {
-  //   return false;
-  // };
-  // holder.ondrop = (e) => {
-  //   e.preventDefault();
-  //   const file = e.dataTransfer.files[0];
-  //   console.log('File you dragged here is', file.path);
-  //   return false;
-  // };
-</script>
+        <!-- <iframe src="chrome://serviceworker-internals/" width="500" height="500"></iframe> -->
 
-<!-- <iframe src="chrome://serviceworker-internals/" width="500" height="500"></iframe> -->
-
-    <script src="building.js"></script>
+        sure sure
+        <div  style="background-color:rgb(255,0,255); width:300px; height:300px;" >whatever</div>
+        ok ok
+        <script src="building.js"></script>
     </body>
 </html>

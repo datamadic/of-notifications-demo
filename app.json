@@ -22,13 +22,7 @@
   "_maxWidth": 500
  },
  "runtime": {
-  "arguments": "--disable-legacy-window --debug=5858 --v=1       --remote-debugging-port=9090 --disable-web-security --attach-console",
+  "arguments": " --v=1 --attach-console",
   "version": "canary"
- },
- "shortcut": {
-  "icon": "http://demoappdirectory.openf.in/desktop/config/apps/OpenFin/HelloOpenFin/img/openfin.ico",
-  "company": "OpenFin",
-  "description": "Hello OpenFin",
-  "name": "note demo"
  }
 }
